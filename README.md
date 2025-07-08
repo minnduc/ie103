@@ -1,8 +1,8 @@
 <!-- Banner --> <p align="center"> <img src="https://img.shields.io/badge/EcoWaste-Next.js%2015%20%7C%20TypeScript-00B894?style=for-the-badge&logo=recycling&logoColor=white" alt="EcoWaste Banner"> </p> <h1 align="center">♻️ EcoWaste – Hệ Thống Quản Lý Chất Thải Thông Minh</h1> <p align="center"> <em>Next.js 15 - TypeScript - PostgreSQL - AI Computer Vision</em><br> <img src="https://img.shields.io/github/license/minnduc/ie103?style=flat-square" alt="License"> <img src="https://img.shields.io/github/stars/minnduc/ie103?style=flat-square" alt="Stars"> <img src="https://img.shields.io/github/forks/minnduc/ie103?style=flat-square" alt="Forks"> </p>
-🚀 Giới Thiệu
+🚀 Giới Thiệu  
 EcoWaste là nền tảng quản lý chất thải toàn diện, sử dụng AI để phân loại, đặt lịch thu gom và theo dõi tác động môi trường. Hướng đến mục tiêu phát triển bền vững và nâng cao ý thức bảo vệ hành tinh.
 
-✨ Tính Năng Nổi Bật
+✨ Tính Năng Nổi Bật  
 AI Phân Loại Thông Minh: Nhận diện 8 loại chất thải qua ảnh.
 
 Đặt Lịch Thu Gom: Lên lịch, quản lý địa điểm và theo dõi trạng thái đơn hàng.
@@ -20,7 +20,7 @@ Thống Kê Tác Động: Hiển thị lượng chất thải tái chế và CO�
 | Authentication | JWT, RBAC                       | Bảo mật & phân quyền           |
 | UI Kit      | Shadcn/ui, Radix UI, Lucide        | Components & icons     
 
-🗂️ Cấu Trúc Thư Mục
+🗂️ Cấu Trúc Thư Mục  
 ie103/  
 ├── public/  
 │ └── ...  
@@ -44,7 +44,7 @@ ie103/
 ├── package.json  
 └── README.md  
 
-⚙️ Cài Đặt & Chạy
+⚙️ Cài Đặt & Chạy  
 1. Clone repository  
 git clone https://github.com/minnduc/ie103.git  
 cd ie103  
