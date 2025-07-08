@@ -1,75 +1,77 @@
-# 🚀 IE103 – Modern AI-Powered Web App
+<!-- Banner --> <p align="center"> <img src="https://img.shields.io/badge/EcoWaste-Next.js%2015%20%7C%20TypeScript-00B894?style=for-the-badge&logo=recycling&logoColor=white" alt="EcoWaste Banner"> </p> <h1 align="center">♻️ EcoWaste – Hệ Thống Quản Lý Chất Thải Thông Minh</h1> <p align="center"> <em>Next.js 15 - TypeScript - PostgreSQL - AI Computer Vision</em><br> <img src="https://img.shields.io/github/license/minnduc/ie103?style=flat-square" alt="License"> <img src="https://img.shields.io/github/stars/minnduc/ie103?style=flat-square" alt="Stars"> <img src="https://img.shields.io/github/forks/minnduc/ie103?style=flat-square" alt="Forks"> </p>
+🚀 Giới Thiệu
+EcoWaste là nền tảng quản lý chất thải toàn diện, sử dụng AI để phân loại, đặt lịch thu gom và theo dõi tác động môi trường. Hướng đến mục tiêu phát triển bền vững và nâng cao ý thức bảo vệ hành tinh.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Next.js](https://img.shields.io/badge/Next.js-13%2B-blue?logo=next.js)](https://nextjs.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-blue?logo=tailwindcss)](https://tailwindcss.com/)
-[![Drizzle ORM](https://img.shields.io/badge/Drizzle%20ORM-TypeSafe-green)](https://orm.drizzle.team/)
+✨ Tính Năng Nổi Bật
+AI Phân Loại Thông Minh: Nhận diện 8 loại chất thải qua ảnh.
 
-> ✨ A modern Next.js application using AI, beautiful UI with Tailwind CSS, Drizzle ORM, and interactive features.
+Đặt Lịch Thu Gom: Lên lịch, quản lý địa điểm và theo dõi trạng thái đơn hàng.
 
----
+Dashboard Theo Vai Trò: Giao diện riêng cho Admin, Staff và User.
 
-## 📚 Table of Contents
+Thống Kê Tác Động: Hiển thị lượng chất thải tái chế và CO₂ tiết kiệm.
 
-- [📌 Overview](#-overview)
-- [🎯 Features](#-features)
-- [🧰 Tech Stack](#-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-- [📂 Project Structure](#-project-structure)
-- [🛢️ Database & ORM](#️-database--orm)
-- [📜 Scripts](#-scripts)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [📬 Contact](#-contact)
+🏗️ Stack Công Nghệ  
+| Layer       | Công Cụ                            | Ghi Chú                        |
+|-------------|------------------------------------|--------------------------------|
+| Frontend    | Next.js 15, Tailwind CSS           | SSR/SSG, utility-first CSS     |
+| Backend     | Next.js API Routes, TypeScript     | Type-safe, developer friendly  |
+| Database    | PostgreSQL + Drizzle ORM           | Type-safe queries, migrations  |
+| Authentication | JWT, RBAC                       | Bảo mật & phân quyền           |
+| UI Kit      | Shadcn/ui, Radix UI, Lucide        | Components & icons     
 
----
+🗂️ Cấu Trúc Thư Mục
+ie103/  
+├── public/  
+│ └── ...  
+├── src/  
+│ ├── app/  
+│ │ ├── ai/  
+│ │ ├── dashboard/  
+│ │ │ ├── admin/  
+│ │ │ ├── staff/  
+│ │ │ └── user/  
+│ │ ├── home/  
+│ │ ├── pickup/  
+│ │ └── waste-types/  
+│ ├── components/  
+│ ├── hooks/  
+│ ├── lib/  
+│ │ └── db/  
+│ └── styles/  
+├── .env.example  
+├── next.config.js  
+├── package.json  
+└── README.md  
 
-## 📌 Overview
+⚙️ Cài Đặt & Chạy
+1. Clone repository  
+git clone https://github.com/minnduc/ie103.git  
+cd ie103  
 
-IE103 is a feature-rich web application built with modern technologies. It integrates OpenAI services for dynamic AI interactions, supports drag & drop UI, theme switching, charts, secure authentication, and type-safe ORM.
+3. Cài đặt dependencies  
+pnpm install  
+hoặc npm install  
+hoặc yarn install  
 
----
+5. Cấu hình biến môi trường  
+   Sao chép file mẫu và chỉnh sửa:  
+     cp .env.example .env.local  
+   Trong .env.local, cập nhật:  
+     DATABASE_URL=postgresql://<username>:<password>@localhost:5432/ecowaste  
 
-## 🎯 Features
+7. Khởi động development   
+   pnpm dev  
+   hoặc npm run dev  
+   hoặc yarn dev  
+   Mở trình duyệt tại http://localhost:3000.  
 
-- 🤖 **OpenAI Integration** – Chat, content generation, and autocomplete
-- 🧩 **Drag & Drop** – Powered by `@dnd-kit`
-- 💡 **Dark / Light Mode** – via `next-themes`
-- 📊 **Data Visualization** – with Recharts
-- 🧪 **Form Validation** – Schema-safe using Zod
-- 🔔 **Toast Notifications** – Using Sonner
-- 🎨 **Modern UI** – Powered by Radix UI & TailwindCSS
+📦 Build & Triển khai  
+pnpm build  
+pnpm start  
+Hoặc sử dụng nền tảng hosting (Vercel, Netlify) với thiết lập tương tự.  
 
----
+📜 Giấy Phép  
+Dự án phục vụ mục đích học tập. Xem chi tiết trong LICENSE.  
 
-## 🧰 Tech Stack
-
-| Type              | Tools                                                                 |
-|-------------------|------------------------------------------------------------------------|
-| 🔧 Framework      | [Next.js](https://nextjs.org/) + App Router                           |
-| 🖋️ Language       | TypeScript                                                             |
-| 🎨 UI Toolkit     | TailwindCSS, Radix UI, Lucide Icons, Tabler Icons                      |
-| 🎭 Theming        | `next-themes`, `vaul`                                                  |
-| 📦 Drag & Drop    | `@dnd-kit`                                                             |
-| 📊 Charts         | Recharts                                                               |
-| ✅ Validation     | Zod                                                                    |
-| 🛢️ ORM            | Drizzle ORM + PostgreSQL                                               |
-| 🔐 Auth/Security  | bcrypt, jose                                                           |
-| 🤖 AI SDK         | `@ai-sdk/openai`, `@ai-sdk/react`, `openai`                            |
-
----
-
-## 🚀 Getting Started
-
-### 🔧 Prerequisites
-
-- Node.js `>=18`
-- PostgreSQL installed
-- Bun, Yarn, or npm
-
-### 📥 Installation
-
-```bash
-git clone https://github.com/minnduc/ie103.git
-cd ie103
-npm install    # or yarn install / bun install
+<p align="center"><em>“Hãy cùng nhau hành động vì một hành tinh xanh hơn!”</em> 🌱</p>
