@@ -45,12 +45,6 @@
 - **Staff Interface**: Pickup management and route optimization
 - **User Dashboard**: Personal waste tracking and scheduling
 
-### 📊 **Environmental Impact Analytics**
-- **Carbon Footprint Tracking**: Visualize CO₂ savings from recycling
-- **Waste Volume Metrics**: Track recycled materials over time
-- **Sustainability Reports**: Comprehensive environmental impact summaries
-- **Community Leaderboards**: Gamify sustainable practices
-
 ---
 
 ## 🏗️ Technology Stack
